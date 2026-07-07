@@ -1,0 +1,291 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial;
+}
+
+
+body{
+    color:#1c1c1c;
+}
+
+
+/* navbar */
+
+header{
+
+    height:90px;
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    box-shadow:0 2px 8px #ddd;
+
+}
+
+
+.logo{
+
+    font-size:38px;
+    font-weight:bold;
+    font-style:italic;
+
+}
+
+
+.search-box{
+
+    width:550px;
+    height:55px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    display:flex;
+    align-items:center;
+    padding:15px;
+    gap:15px;
+
+}
+
+
+.search-box input{
+
+    border:none;
+    outline:none;
+    width:100%;
+    font-size:15px;
+
+}
+
+header a{
+
+margin:20px;
+font-size:18px;
+color:gray;
+
+}
+
+
+
+/* tabs */
+
+
+.tabs{
+
+display:flex;
+gap:50px;
+margin:40px 80px;
+border-bottom:1px solid #ddd;
+
+}
+
+
+.tab{
+
+font-size:22px;
+padding:20px;
+cursor:pointer;
+
+}
+
+
+.active{
+
+color:#ff4f5a;
+border-bottom:3px solid #ff4f5a;
+
+}
+
+
+
+/* sections */
+
+section{
+
+margin:30px 80px;
+
+}
+
+
+section h1{
+
+font-size:32px;
+margin-bottom:20px;
+
+}
+
+
+.collections{
+
+display:flex;
+gap:20px;
+
+}
+
+
+.collection-card{
+
+width:260px;
+height:320px;
+position:relative;
+overflow:hidden;
+border-radius:8px;
+
+}
+
+
+.collection-card img{
+
+width:100%;
+height:100%;
+object-fit:cover;
+filter:brightness(60%);
+
+}
+
+
+.collection-card h3,
+.collection-card p{
+
+position:relative;
+bottom:70px;
+color:white;
+padding-left:15px;
+
+}
+
+
+
+/* banner */
+
+
+.banner{
+
+margin:50px 80px;
+height:260px;
+border-radius:15px;
+background:
+linear-gradient(to right,black,transparent),
+url("https://images.unsplash.com/photo-1504674900247-0877df9cc836");
+
+background-size:cover;
+color:white;
+
+display:flex;
+align-items:center;
+padding-left:70px;
+
+}
+
+
+.banner h1{
+
+font-size:60px;
+
+}
+
+
+.banner button{
+
+background:#ff4f5a;
+color:white;
+border:none;
+padding:15px;
+border-radius:8px;
+
+}
+
+
+
+/* filters */
+
+.filters{
+
+display:flex;
+gap:15px;
+margin:30px 0;
+
+}
+
+
+.filters button{
+
+background:white;
+padding:12px;
+border-radius:8px;
+border:1px solid #ccc;
+color:gray;
+
+}
+
+
+
+
+/* restaurants */
+
+
+.restaurants{
+
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:45px;
+
+}
+
+
+.card{
+
+border-radius:15px;
+overflow:hidden;
+transition:.3s;
+
+}
+
+
+.card:hover{
+
+box-shadow:0 5px 20px #ccc;
+transform:scale(1.03);
+
+}
+
+
+.card img{
+
+width:100%;
+height:230px;
+object-fit:cover;
+
+}
+
+
+.info{
+
+padding:10px;
+
+}
+
+
+.info h3{
+
+display:flex;
+justify-content:space-between;
+
+}
+
+
+.info span{
+
+background:green;
+color:white;
+font-size:14px;
+padding:4px;
+border-radius:5px;
+
+}
+
+.info p{
+
+color:gray;
+margin:8px 0;
+
+}
